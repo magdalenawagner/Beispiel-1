@@ -1,0 +1,214 @@
+---
+title: "exercise_02"
+author: "Magdalena Wagner"
+format: pdf
+editor: visual
+---
+
+# Problem 1
+
+# weight data from participants in kg
+
+```{r}
+weight <- c(
+61, 60, 73, 69, 82, 85, 52, 91, 68, 50, 108, 81, 52, 57, 85, 74,
+65, 56, 69, 58, 94, 64, 62, 58, 50, 50, 83, 62, 53, 81, 82, 84,
+60, 72, 95, 89, 75, 61, 53, 82, 74, 67, 60, 80, 64, 60, 71, 78,
+90, 74, 59, 85, 87, 75, 100, 85, 71, 60, 72, 62, 65, 95 , 83, 62
+) 
+```
+
+## 1.1 What is the mean, maximum, and minimum weight of the weight data?
+
+```{r}
+mean(weight) 
+range(weight)
+```
+
+## 1.2 Calculate the mean of the weight data “by hand”.
+
+```{r}
+mean(c, na.rm = TRUE)
+```
+
+##1.3 Create a new vector that contains the minimum and the maximum of the weight data.
+
+```{r}
+mean(c, na.rm = TRUE)
+```
+
+## 1.4 What is the standard deviation and variance of the weight data?
+
+```{r}
+sd(weight)
+var(weight)
+```
+
+## 1.5 What is the height that 50% of the participants surpass and 50% fall below?
+
+```{r}
+mean(c, na.rm = TRUE)
+```
+
+## 1.6 What is the weight that only 25% of the participants surpass?
+
+```{r}
+mean(c, na.rm = TRUE)
+```
+
+## 1.7 Increase the weight of every participant by 20% and assign the result to a new object.
+
+```{r}
+mean(c, na.rm = TRUE)
+```
+
+# Problem 2
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 2.1 Convert names to uppercase.
+
+```{r}
+toupper("names")
+```
+
+## 2.2 Create participant IDs (P_1, P_2, P_3, …) in a way that it could be applied to any number of names. hint: use paste() and rep().
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+# Problem 3
+
+## 3.1 Create a list named participant_info that contains the following:
+• ID: 101
+• Name: Alex
+• Age: 25
+• Scores: A vector of test scores: 85, 90, 78, 92
+• Diagnosis: A list with:
+– Has_Anxiety: TRUE (logical value indicating anxiety presence)
+– Severity: “Moderate Anxiety”
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 3.2 Access and print the second test score and the Diagnosis list with the Severity element.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 3.3 Change Has_Anxiety to FALSE and remove the Severity element.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 3.4 Append a new score 88 to the Scores vector.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 3.5 Calculate the sum of the Scores.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+# Problem 4
+
+## 4.1 Create a 3D array called psych_array with 2 rows, 3 columns, and 3 layers. The array should contain random numbers between 1 and 100.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 4.2 Label the rows, columns, and layers:
+• Rows: Participant_1, Participant_2
+• Columns: Stress, Anxiety, Depression
+• Layers: Time_1, Time_2, Time_3 (simulating repeated measures over time)
+Hint: Pass a list to dimnames.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 4.3 Access and print the stress level of Participant_1 at Time_2 and the entire Anxiety column for all time points.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 4.4 Sum the Depression levels at Time_2 and Time_3 for both participants and subtract the result from Time_1.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+# Problem 5
+
+## 5.1 Create a data frame called psych_study with 100 participants, containing the following columns:
+• Participant_ID: A sequence of numbers from 1 to 100.
+• Age: Random ages between 18 and 60.
+• Gender: Randomly assign “Male”, “Female”, or “Non-binary” with probabilities 0.45, 0.45, 0.1.
+• Stress_Level: Random values from a normal distribution with a mean of 5 and standard deviation of 2.
+• Anxiety_Score: A score from 0 to 10, generated using rbinom(). Assume 10 trials with a probability of 0.4
+• Therapy_Attendance: A binary variable (0 = No, 1 = Yes) indicating whether the participant has attended therapy (hint: use rbinom()).
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 5.2 Calculate:
+• The mean and standard deviation of Stress_Level.
+• The proportion of participants who have attended therapy.
+• The average Anxiety Score for those who have attended therapy
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 5.3 Convert the Therapy_Attendance variable to a factor with labels “No” and “Yes”.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 5.4 Round the Stress_level to an integer (no decimals) and get the number of unique values.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 5.5 Create a new subset of the data where:
+• Stress_Level is greater than 5
+• Anxiety_Score is greater than or equal to 5
+• and the person has not attended therapy
+Store this in high_risk_group.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 5.6 Mean-center the Stress_Level variable.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 5.7 Compute the average Stress_Level and Anxiety_Score for each gender.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
+## 5.8 Compute the percentage of therapy attendees per gender.
+
+```{r}
+names <- c("anna", "ben", "chris", "diana")
+```
+
